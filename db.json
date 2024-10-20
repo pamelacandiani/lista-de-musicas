@@ -1,3 +1,13 @@
 {
-  
+  "musicas":[
+
+    {
+      "id": 1019,
+      "nome": "Wicked Game",
+      "artista": "homem",
+      "minutos": 449
+    }
+
+  ]
+
 }
