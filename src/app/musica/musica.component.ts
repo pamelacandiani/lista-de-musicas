@@ -23,4 +23,10 @@ export class MusicaComponent implements OnInit{
     })
   }
 
+  delete(musica: Musica){
+    this.service.delete(musica).subscribe({
+      next: () => this.loadMusicas()
+    })
+  }
+
 }

@@ -7,6 +7,7 @@
 				<th scope="col">Nome</th>
 				<th scope="col">Artista</th>
 				<th scope="col">Minutos</th>
+        <th scope="col">Opções</th>
 			</tr>
 		</thead>
 	  <tbody>
@@ -15,6 +16,8 @@
 				<td>{{musica.nome}}</td>
 				<td>{{musica.artista}}</td>
 				<td>{{musica.minutos}}</td>
+
+        <td><button class="btn btn-danger" (click)="delete(musica)">Remover</button></td>
 		</tr>
 	  </tbody>
 	</table>

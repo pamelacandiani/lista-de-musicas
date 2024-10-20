@@ -15,7 +15,10 @@ export class MusicaService {
     return this.http.get<Musica []>('http://localhost:3000/musicas')
   }
 
-}
+  delete(musica: Musica): Observable<void>{
+    return this.http.delete<void>('http://localhost:3000/musicas/' + musica.id)
+  }
 
+}
 
 
